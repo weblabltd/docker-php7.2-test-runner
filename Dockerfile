@@ -12,6 +12,6 @@ RUN curl -sS https://getcomposer.org/installer | php \
     && chmod +x /usr/local/bin/composer
 
 # Install PHPUnit 6
-RUN curl -O -sS  https://phar.phpunit.de/phpunit-6.phar \
+RUN curl -O -L -sS  https://phar.phpunit.de/phpunit-6.phar \
     && mv phpunit-6.phar /usr/local/bin/phpunit \
     && chmod +x /usr/local/bin/phpunit
